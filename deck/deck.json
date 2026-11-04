@@ -1,0 +1,32 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-03T11:30:00Z"},
+  "lists": "css",
+  "title": "DeFi Loans Workshop",
+  "cover": "cover",
+  "order": [
+    "cover", "poll", "agenda",
+    "tradfi", "never-sell", "sell-vs-borrow",
+    "four-numbers", "calc", "ltv-ladder", "routes", "wrappers",
+    "toolkit", "live-aave", "morpho", "v3-vs-v4",
+    "tokenping", "drill", "risks",
+    "cash-out", "peer-xyz", "live-off", "tax",
+    "spectrum", "flash-loans", "no-collateral", "unlloo-story", "unlloo",
+    "crowd-example", "crowd-borrow", "crowd-lend", "crowd-exercise", "crowd-risks",
+    "tips", "hacks", "which-loan", "homework", "links", "links-tools", "questions"
+  ],
+  "sections": {
+    "s1": {"description": "Warm-up: who is in the room and the plan for the hour", "start": "cover"},
+    "s2": {"description": "Why borrowing beats selling: mortgages, Lombard loans and Bitcoin", "start": "tradfi"},
+    "s3": {"description": "How collateralized loans work and where to get one", "start": "four-numbers"},
+    "s4": {"description": "Hands-on: borrowing on Aave V3, Morpho and Aave v4", "start": "toolkit"},
+    "s5": {"description": "Staying alive: alerts, a fire drill and the risk map", "start": "tokenping"},
+    "s6": {"description": "Cashing out and living off the loan", "start": "cash-out"},
+    "s7": {"description": "Beyond collateral: flash loans and Unlloo crowd loans, with an exercise", "start": "spectrum"},
+    "s8": {"description": "Tips, hacks, links and next steps", "start": "tips"}
+  },
+  "faces": {
+    "nunito-sans": {"family": "Nunito Sans", "href": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap"}
+  },
+  "designSystems": []
+}

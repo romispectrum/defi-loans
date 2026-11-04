@@ -1,0 +1,40 @@
+<section id="calc" style="background:radial-gradient(circle at 88% 8%, rgba(190,205,103,0.30) 0%, rgba(190,205,103,0) 55%), #1D3814;color:#FFFFFF;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#BECD67"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#BECD67">Your turn · 2 minutes</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-1.44px;color:#FFFFFF">Find your <span style="color:#BECD67">liquidation price</span></h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:32px;width:860px">
+<div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.13);border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#BECD67">The setup</p>
+<p style="font-variant-numeric:tabular-nums;font-size:32px;color:#FFFFFF">Collateral: 1 WBTC at $60,000</p>
+<p style="font-variant-numeric:tabular-nums;font-size:32px;color:#FFFFFF">Threshold: 78%</p>
+<p style="font-variant-numeric:tabular-nums;font-size:32px;color:#FFFFFF">You borrow: $20,000</p>
+</div>
+<ol style="font-size:32px;line-height:1.5;color:#FFFFFF">
+<li>What is your health factor?</li>
+<li>At what BTC price are you liquidated?</li>
+<li>How far can BTC fall before that?</li>
+</ol>
+</div>
+<div data-build-in="fade" style="position:absolute;left:1060px;top:323px;width:732px;background:#F8FAF7;border-radius:28px;box-shadow:0 40px 140px rgba(6,12,8,0.35);padding:48px;display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">Answers</p>
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.88px;color:#1D3814">HF = 2.34</p>
+<p style="font-variant-numeric:tabular-nums;font-size:24px;color:#54694D">60,000 × 0.78 ÷ 20,000</p>
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.88px;color:#1D3814">Liquidated at $25,641</p>
+<p style="font-variant-numeric:tabular-nums;font-size:24px;color:#54694D">20,000 ÷ (1 × 0.78)</p>
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.88px;color:#697733">BTC can fall 57%</p>
+<p style="font-size:24px;line-height:1.4;color:#54694D">Shortcut: drop to liquidation = 1 − 1 ÷ HF</p>
+</div>
+<aside>0:11 – Interactive. Give the room 2 minutes. Phones as calculators are fine. Pairs are fine.
+
+Read the setup aloud: 1 WBTC at $60k, liquidation threshold 78%, borrowed $20k.
+
+Then click to reveal the answers:
+1. HF = 60,000 × 0.78 ÷ 20,000 = 2.34
+2. Liquidation price = debt ÷ (BTC amount × threshold) = 20,000 ÷ 0.78 ≈ $25,641
+3. Drop = 1 − 25,641 ÷ 60,000 ≈ 57%
+
+The shortcut worth memorizing: the % drop you can survive = 1 − 1/HF. HF 2 → 50%. HF 1.5 → 33%. HF 1.25 → 20%.
+
+Ask who got it right. Ask whoever got it wrong where they slipped – usually they forgot the threshold.</aside>
+</section>

@@ -1,0 +1,46 @@
+<section id="flash-loans" style="background:radial-gradient(circle at 88% 0%, rgba(143,193,217,0.26) 0%, rgba(143,193,217,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">06 · Beyond collateral</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Flash loans: <span style="color:#697733">zero collateral</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:820px 796px;gap:48px;align-items:start">
+<div style="border:2px dashed rgba(105,119,51,0.45);border-radius:32px;background:rgba(255,255,255,0.45);padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">One transaction · all or nothing</p>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:20px 28px">
+<p style="font-variant-numeric:tabular-nums;font-size:32px;font-weight:700;color:#1D3814">Borrow 1,000,000 USDC</p>
+</div>
+<div style="display:flex;justify-content:center"><x-shape kind="arrow-down" style="background:#697733;width:20px;height:40px"></x-shape></div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:20px 28px">
+<p style="font-size:32px;font-weight:600;color:#1D3814">Use it: swap, refinance, liquidate</p>
+</div>
+<div style="display:flex;justify-content:center"><x-shape kind="arrow-down" style="background:#697733;width:20px;height:40px"></x-shape></div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:20px 28px">
+<p style="font-variant-numeric:tabular-nums;font-size:32px;font-weight:700;color:#1D3814">Repay 1,000,000 + a small fee</p>
+</div>
+<p style="font-size:24px;line-height:1.4;color:#54694D">Not repaid? The whole transaction reverts, as if it never happened.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">You may already use them</h3>
+<ul style="font-size:32px;line-height:1.4;color:#54694D">
+<li>Swap collateral (WBTC → tBTC) without closing the loan</li>
+<li>Repay debt with your collateral in one click</li>
+<li>Move a loan to a cheaper protocol</li>
+<li>Unwind a leveraged loop at once</li>
+</ul>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#697733">The dark side</h3>
+<p style="font-size:32px;line-height:1.4;color:#54694D">Attackers borrow firepower too: the bZx (2020) and Euler (2023) exploits ran on flash loans.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F7258">Docs: <a href="https://aave.com/docs/aave-v3/guides/flash-loans">Aave V3 flash loans</a> · <a href="https://docs.morpho.org/learn/concepts/blue">Morpho Blue markets</a>.</p>
+<aside>0:39 – The most extreme form of undercollateralized lending: zero collateral. And it’s safe for the lender.
+
+How: a smart contract lends you any amount the pool has, you use it, and you repay principal plus a small fee – all inside the same transaction. If the repayment is missing, the entire transaction reverts as if it never happened. The lender can’t lose; you just paid gas for a failed transaction.
+
+Aave and Morpho both offer flash loans. You don’t need to write code to benefit: “swap collateral”, “repay with collateral” and one-click refinancing or deleveraging tools are built on flash loans under the hood.
+
+Hack for the room: if you ever want to move from WBTC to tBTC collateral, or from Aave V3 to v4, you don’t need to repay first – a flash-loan-powered tool can move the position in one transaction. (Always simulate in Rabby first.)
+
+Dark side: many DeFi exploits used flash loans to borrow huge amounts for a few seconds – bZx in 2020, Euler in 2023. The flash loan isn’t the bug; it amplifies an existing bug.
+
+Docs: Aave V3 flash loans https://aave.com/docs/aave-v3/guides/flash-loans · Morpho https://docs.morpho.org/learn/concepts/blue · Aave credit delegation (another no-collateral tool) https://aave.com/docs/aave-v3/guides/credit-delegation</aside>
+</section>

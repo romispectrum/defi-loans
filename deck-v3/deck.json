@@ -1,0 +1,33 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-11-19T08:05:00Z"},
+  "lists": "css",
+  "title": "DeFi Loans Workshop V3",
+  "cover": "cover",
+  "order": [
+    "cover", "poll", "agenda",
+    "tradfi", "never-sell", "sell-vs-borrow",
+    "four-numbers", "calc", "ltv-ladder", "routes", "wrappers",
+    "toolkit", "live-aave", "morpho", "v3-vs-v4",
+    "tokenping", "drill", "risks",
+    "cash-out", "peer-xyz", "live-off", "tax",
+    "tips", "hacks",
+    "spectrum", "q-lend", "unlloo-story", "crowd-loan", "unlloo",
+    "crowd-example", "no-collateral", "crowd-exercise", "crowd-risks", "feedback",
+    "which-loan", "homework", "links", "links-tools", "questions"
+  ],
+  "sections": {
+    "s1": {"description": "Warm-up: a poll and the plan for the hour", "start": "cover"},
+    "s2": {"description": "Part 1: why borrow against an asset, from mortgages to Bitcoin", "start": "tradfi"},
+    "s3": {"description": "Part 1: how a collateralized loan works and where to get one", "start": "four-numbers"},
+    "s4": {"description": "Part 1: hands-on with Aave V3, Morpho and Aave v4", "start": "toolkit"},
+    "s5": {"description": "Part 1: staying alive, cashing out and tax", "start": "tokenping"},
+    "s6": {"description": "Part 1: tips and hacks", "start": "tips"},
+    "s7": {"description": "Part 2: uncollateralized loans and Unlloo crowd loans, run as a discussion", "start": "spectrum"},
+    "s8": {"description": "Wrap-up: a cheat sheet, homework, links and questions", "start": "which-loan"}
+  },
+  "faces": {
+    "nunito-sans": {"family": "Nunito Sans", "href": "https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&display=swap"}
+  },
+  "designSystems": []
+}

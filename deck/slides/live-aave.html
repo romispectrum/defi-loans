@@ -1,0 +1,47 @@
+<section id="live-aave" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">03 · Hands-on · live demo</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Live: <span style="color:#697733">borrowing on app.aave.com</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:1000px 616px;gap:48px;align-items:start">
+<ol style="font-size:32px;line-height:1.5;color:#1D3814">
+<li>Open <a href="https://app.aave.com">app.aave.com</a> from a bookmark, connect <a href="https://rabby.io">Rabby</a></li>
+<li>Pick a cheap market: Arbitrum or Base</li>
+<li>Supply WBTC, switch “collateral” on</li>
+<li>Borrow USDC or EURC, watch the health factor preview</li>
+<li>Stop at HF 2.0 or higher. Never press Max</li>
+<li>Check HF and liquidation price in Rabby</li>
+</ol>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Read these on screen</h3>
+<ul style="font-size:24px;line-height:1.5;color:rgba(255,255,255,0.78)">
+<li><b>Health factor:</b> the only number that matters</li>
+<li><b>Borrow APY:</b> variable, moves all the time</li>
+<li><b>E-Mode:</b> correlated assets only, leave it off</li>
+</ul>
+<p style="font-size:24px;font-weight:600;color:#BECD67">Demo size: $20. Gas on an L2: cents.</p>
+<p style="font-size:24px;color:rgba(255,255,255,0.78)">Docs: <a href="https://aave.com/docs/aave-v3/markets/borrow">borrow on Aave V3</a> · <a href="https://aave.com/docs/aave-v3/markets/health-factor">health factor</a></p>
+</div>
+</div>
+<aside>0:18 – LIVE DEMO (about 6 minutes). Switch to the browser.
+
+Before you start: open Aave from your bookmark, not from a search result or a link in chat. Phishing copies of DeFi frontends are common.
+
+Walk through:
+1. Connect Rabby (rabby.io). Show the network switcher; pick Arbitrum or Base.
+2. Supply a small amount of WBTC. Point out the “Collateral” toggle.
+3. Open Borrow, pick USDC or EURC. Type an amount and show how the health-factor preview moves in real time. Show what Max would do (HF ≈ 1.0) and DON’T click it.
+4. Confirm a borrow that keeps HF ≥ 2.
+5. Open Rabby’s portfolio view: same position, health factor, liquidation price.
+
+Also on screen: “Available” is how much is left to borrow in the market, not how much you should borrow.
+
+Fallback if Wi-Fi or wallet fails: show the Aave UI without connecting (markets, rates, max LTV, liquidation threshold), and the health factor calculator from the earlier slide.
+
+Optional: pro.aave.com shows the same data in a denser layout.
+
+The whole loop, for reference (we did steps 2 to 4 live):
+1. Wrap BTC into WBTC. 2. Supply it and switch collateral on. 3. Borrow a stablecoin, never at Max. 4. Swap the debt to the cheapest stablecoin when rates move. 5. Cash out by card, SEPA or peer.xyz. 6. Keep transaction hashes for your accountant. 7. Monitor with alerts on two channels (tokenping.xyz). 8. Repay or top up as the market moves, then start again.
+
+Docs: borrowing on Aave V3 https://aave.com/docs/aave-v3/markets/borrow · health factor https://aave.com/docs/aave-v3/markets/health-factor</aside>
+</section>

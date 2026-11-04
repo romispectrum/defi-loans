@@ -1,0 +1,32 @@
+<section id="risks" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">04 · Stay alive</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">What can go wrong, <span style="color:#697733">and the fix</span></h2>
+</div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:12px 24px;display:flex;flex-direction:column">
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:12px 16px;border-bottom:2px solid rgba(190,205,103,0.5)"><p style="width:780px;font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">Risk</p><p style="width:780px;font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">Fix</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Liquidation (it counts as a sale)</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Low LTV, alerts from <a href="https://tokenping.xyz">Tokenping</a>, a reserve</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Smart contract or bridge bug</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Battle-tested protocols; split big positions</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Wrapper custodian freezes or fails</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Know who holds the BTC; split wrappers</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Stablecoin freeze or depeg</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Spread debt over USDC, USDT, EURC, DAI</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Rate spike in a thin market</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Watch the APY; swap the debt or repay</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Interest quietly growing the debt</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Pay the accrued interest now and then</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;"><p style="width:780px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Phishing and poisoned addresses</p><p style="width:780px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Bookmarks, an address book, <a href="https://revoke.cash">revoke.cash</a></p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F7258">Read the risk docs: <a href="https://aave.com/docs/resources/risks">Aave protocol risks</a> · <a href="https://docs.morpho.org/learn/resources/risks">Morpho risk and security</a> · <a href="https://www.unlloo.com/risks">Unlloo risks</a></p>
+<aside>0:31 – The risk map. Go row by row, one sentence each.
+
+– Liquidation is also a taxable sale in most countries, so a liquidation hurts twice. Low LTV, Tokenping alerts (tokenping.xyz) on two channels, and a stablecoin reserve to repay with.
+– Smart contract and bridge risk: stick to protocols with years of history and many audits; don’t put everything in one protocol or on one chain.
+– Wrapper risk: WBTC, cbBTC, BTC.b and cirBTC all depend on a custodian; tBTC spreads that trust across a signer group. Know who holds the real BTC, and with a big stack don’t use one wrapper for all of it.
+– Stablecoin risk: USDC, USDT, EURC and EURCV can be frozen by the issuer; any of them can depeg. DAI is more decentralized. Spreading the debt means one freeze can’t lock you out of repaying.
+– Rate spikes: in thin markets (Aave v4 spokes, small Morpho markets) the variable rate can jump in hours.
+– Interest compounds onto the debt: if you never pay anything, HF slowly falls even with BTC flat.
+– Operational: address poisoning (attackers send dust from look-alike addresses so you copy the wrong one from history), fake frontends, unlimited token approvals (including Permit2). Use bookmarks, an address book, and revoke old approvals at revoke.cash.
+
+Self-custody means you are the security team. Use a hardware wallet and test with small amounts first.
+
+Links: https://revoke.cash · Rabby: https://rabby.io
+
+Docs: Aave risks https://aave.com/docs/resources/risks · Morpho risks https://docs.morpho.org/learn/resources/risks · Unlloo risks https://www.unlloo.com/risks</aside>
+</section>

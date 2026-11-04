@@ -1,0 +1,52 @@
+<section id="four-numbers" data-transition="fade" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">02 · How loans work</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Four numbers <span style="color:#697733">run your loan</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:32px">
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:72px;font-weight:700;letter-spacing:-0.02em;line-height:1.1;color:#697733">33%</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;line-height:1.2;color:#1D3814">Loan-to-value (LTV)</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">Debt ÷ collateral value. The one number you control.</p>
+</div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:72px;font-weight:700;letter-spacing:-0.02em;line-height:1.1;color:#697733">73%</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;line-height:1.2;color:#1D3814">Max LTV</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">The most the app lets you borrow. A limit, not a target.</p>
+</div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:72px;font-weight:700;letter-spacing:-0.02em;line-height:1.1;color:#697733">78%</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;line-height:1.2;color:#1D3814">Liquidation threshold</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">Cross this LTV and liquidators sell part of your collateral.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:32px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:72px;font-weight:700;letter-spacing:-0.02em;line-height:1.1;color:#BECD67">2.34</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;line-height:1.2;color:#FFFFFF">Health factor</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">Your safety gauge. Below 1.0 you get liquidated.</p>
+</div>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:32px 40px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#FFFFFF">HF = collateral × liquidation threshold ÷ debt</p>
+<p style="font-variant-numeric:tabular-nums;font-size:32px;color:rgba(255,255,255,0.78)">   = $60,000 × 0.78 ÷ $20,000 = <span style="color:#BECD67">2.34</span></p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F7258">Example values: WBTC on Aave V3 Ethereum (Max LTV 73%, liquidation threshold 78%), Oct 2026, per <a href="https://cryptoactu.com/guides/emprunter-sur-ses-cryptos/">Cryptoactu</a>. Parameters change by vote: <a href="https://aave.com/docs/reference/parameters">Aave docs · parameters</a>. How it works: <a href="https://aave.com/docs/aave-v3/markets/health-factor">Aave health factor</a>, <a href="https://docs.morpho.org/learn/concepts/liquidation">Morpho liquidation</a>.</p>
+<aside>0:10 – The vocabulary. Four numbers, one formula. Don’t rush this slide. All examples today use WBTC on Aave V3.
+
+LTV: how much you borrowed relative to your collateral. 33% means $20k debt on $60k of BTC. You choose it, and it moves with the BTC price.
+
+Max LTV: how far the app lets you go when you open the loan. It is a ceiling, not a recommendation. For WBTC on Aave V3 it is 73%.
+
+Liquidation threshold: the LTV at which the protocol allows liquidators to repay part of your debt and take your collateral at a discount. For WBTC on Aave V3 it is 78%.
+
+Health factor: everything above in one number. Above 1 you are safe, below 1 you get liquidated. HF halves if BTC halves.
+
+Formula from my old workshop: HF = (collateral value × liquidation threshold) ÷ debt. Here: 60,000 × 0.78 ÷ 20,000 = 2.34.
+
+Next slide, the room does the math.
+
+Sources:
+– WBTC parameters on Aave V3 Ethereum (73% / 78%, early Oct 2026), Cryptoactu: https://cryptoactu.com/guides/emprunter-sur-ses-cryptos/
+– Check live values: https://app.aave.com
+
+Docs: Aave health factor https://aave.com/docs/aave-v3/markets/health-factor · Aave parameters https://aave.com/docs/reference/parameters · Morpho liquidation and LLTV https://docs.morpho.org/learn/concepts/liquidation</aside>
+</section>

@@ -1,0 +1,54 @@
+<section id="hacks" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">07 · Tips &amp; hacks</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Six hacks <span style="color:#697733">to pay less</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:32px">
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">01</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Rate-hop</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">Move debt from 4.5% to 0.5%: about $2,000 a year saved on $50,000.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">02</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Spread the debt</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">Borrow USDC, EURC and USDT, so one freeze can’t trap you.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">03</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Native bridging</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">Move USDC and EURC with <a href="https://developers.circle.com/cctp">Circle CCTP</a>: burn and mint, no wrapped copies.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">04</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">AI co-pilot</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)"><a href="https://aave.com/blog/introducing-aave-mcp-server">Aave’s MCP server</a> reads positions and simulates actions. You still sign.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">05</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Fix the rate</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)"><a href="https://morpho.org">Morpho Midnight</a> or <a href="https://pwn.xyz">PWN</a> when you want a known cost and end date.</p>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:36px;display:flex;flex-direction:column;gap:12px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#BECD67">06</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Be the lender</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">Supply stablecoins on <a href="https://aave.com">Aave</a> or <a href="https://morpho.org">Morpho</a>, or fund loans on <a href="https://unlloo.com">unlloo.com</a>.</p>
+</div>
+</div>
+<aside>0:56 – The money-saving side.
+
+1. Rate-hop: rates differ hugely between stablecoins and chains. 4.5% vs 0.5% on $50k is ~$2,000 a year. Aave has a debt-swap feature; on v4 you can move to a cheaper spoke. Lupták’s own migration cost ~0.17% of the loan and paid back in under four weeks.
+2. Spread the debt over several stablecoins (from my old workshop): an issuer freeze or depeg on one doesn’t lock you out.
+3. Native bridging: Circle’s CCTP burns USDC/EURC on one chain and mints it on another – no third-party bridge token. (The article’s author published an open-source CCTP page, unaudited – test small.)
+4. AI co-pilot: Aave runs an official MCP server (mcp.aave.com) that reads markets and positions and simulates actions; it prepares unsigned transactions and never holds keys. Ask “what happens to my HF if BTC drops 25%?”.
+5. Fixed rate when you need certainty: Morpho Midnight or PWN.
+6. The other side of the trade: supply stablecoins and earn the interest borrowers pay, or lend on Unlloo (unlloo.com) at your own rate – with the risk we discussed: no collateral, so an unpaid loan is a loss.
+
+Bonus (old workshop, handle with care): the leverage loop – deposit BTC, borrow stables, buy more BTC, deposit again. It multiplies gains and liquidation risk. For pure leverage, small isolated perps are often cleaner.
+
+Sources:
+– Rate-hop numbers and migration cost, Opportunist: https://blog.opportunist.global/ako-%C5%BEi%C5%A5-dlhodobo-z-krypto-p%C3%B4%C5%BEi%C4%8Dky-a-leg%C3%A1lne-neplati%C5%A5-dane-odvody-v-roku-2026-487a49e561ab
+– Circle CCTP: https://developers.circle.com/cctp
+– Aave MCP server: https://aave.com/blog/introducing-aave-mcp-server (docs: https://aave.com/docs/mcp)
+– Morpho: https://morpho.org · PWN: https://pwn.xyz</aside>
+</section>

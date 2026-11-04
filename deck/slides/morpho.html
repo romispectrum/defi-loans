@@ -1,0 +1,46 @@
+<section id="morpho" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">03 · Hands-on</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Morpho: <span style="color:#697733">isolated and cheaper</span></h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:44px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">Morpho markets</h3>
+<p style="font-size:24px;font-weight:600;color:#697733">variable rate · no end date</p>
+<ul style="font-size:32px;line-height:1.4;color:#54694D">
+<li>One collateral, one loan asset: risk stays isolated</li>
+<li>WBTC → euro stablecoin at ≈ 2%, up to 86% LLTV</li>
+<li>Catch: thin liquidity, mainnet gas, no close factor</li>
+</ul>
+<p style="font-size:24px;font-weight:600;color:#697733">Docs: <a href="https://docs.morpho.org/learn/concepts/blue">Blue markets</a> · <a href="https://docs.morpho.org/learn/concepts/liquidation">liquidation</a></p>
+</div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:40px;display:flex;flex-direction:column;gap:16px">
+<h3 style="font-size:44px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">Morpho Midnight</h3>
+<p style="font-size:24px;font-weight:600;color:#2D5B6F">fixed rate · fixed term · new</p>
+<ul style="font-size:32px;line-height:1.4;color:#54694D">
+<li>Rate and end date agreed up front</li>
+<li>Base (Jul 2026) and Ethereum (Sep 2026): USDC against WBTC</li>
+<li>Maturity reminders: <a href="https://tokenping.xyz">Tokenping</a></li>
+</ul>
+<p style="font-size:24px;font-weight:600;color:#697733">Docs: <a href="https://docs.morpho.org/learn/concepts/midnight">What is Midnight?</a> · <a href="https://docs.morpho.org/learn/resources/risks">risks</a></p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F7258">Rates: <a href="https://liberation.travel/live-off-crypto-loan-legally-pay-no-tax-2026">Liberation Travel</a> (Oct 2026). Midnight launch dates: <a href="https://www.theblock.co/news/defi/2026-07-21-morpho-midnight-fixed-rate-lending-protocol-base-onchain-credit-markets-409062">The Block</a> (Base), <a href="https://thedefiant.io/news/defi/morpho-expands-fixed-rate-midnight-markets-to-ethereum">The Defiant</a> (Ethereum).</p>
+<aside>0:23 – Morpho, the second protocol to know. Over $16B in deposits; builders include Coinbase and Société Générale.
+
+Morpho markets (Morpho Blue): each market is one collateral + one loan asset with fixed parameters. Nothing is re-lent, so a bad asset in another market can’t hurt you.
+– The cheap euro trick from Lupták’s article: WBTC/EURCV or cbBTC/EURCV at 86% LLTV, borrow rate around 2% (Oct 2026) – roughly half of Aave V3’s EURC rate at the time.
+– EURCV is a MiCA-regulated euro stablecoin from Société Générale-FORGE. Regulated also means the issuer can freeze.
+– Catches: little free liquidity (about 1.1M EURCV at the time), Ethereum mainnet gas only, and no close factor – a liquidator can repay 100% of your debt at once. So keep a higher health factor here than on Aave.
+
+Morpho Midnight: fixed-rate, fixed-term loans built into the protocol. Launched on Base on 21 July 2026 and on Ethereum on 8 September 2026 (USDC against WBTC or cbBTC). Good when you want to know your cost for the whole period. Tokenping (tokenping.xyz) sends reminders before Midnight loans mature.
+
+Quick demo if time allows: open the Morpho app and show a WBTC market’s LLTV, rate and liquidity.
+
+Sources:
+– Rates, Liberation Travel: https://liberation.travel/live-off-crypto-loan-legally-pay-no-tax-2026
+– Midnight on Base (21 July 2026), The Block: https://www.theblock.co/news/defi/2026-07-21-morpho-midnight-fixed-rate-lending-protocol-base-onchain-credit-markets-409062
+– Midnight on Ethereum, The Defiant: https://thedefiant.io/news/defi/morpho-expands-fixed-rate-midnight-markets-to-ethereum
+
+Docs: overview https://docs.morpho.org/learn · Blue markets https://docs.morpho.org/learn/concepts/blue · liquidation https://docs.morpho.org/learn/concepts/liquidation · Midnight https://docs.morpho.org/learn/concepts/midnight · risks https://docs.morpho.org/learn/resources/risks</aside>
+</section>

@@ -1,0 +1,61 @@
+<section id="peer-xyz" style="background:radial-gradient(circle at 12% 0%, rgba(190,205,103,0.22) 0%, rgba(190,205,103,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">05 · Cash out</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">peer.xyz: <span style="color:#697733">crypto to euros, P2P</span></h2>
+<p style="font-size:32px;line-height:1.4;color:#54694D">“Verify payment, not identity.” No KYC, no custodian: an escrow contract and a proof. <a href="https://peer.xyz">peer.xyz</a></p>
+</div>
+<div style="display:flex;align-items:center;gap:16px">
+<div style="flex:1;background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-variant-numeric:tabular-nums;font-size:24px;font-weight:700;color:#697733">01</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">Lock</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">Your USDC goes into escrow; you set your rate</p>
+</div>
+<x-shape kind="arrow-right" style="background:#697733;width:48px;height:24px"></x-shape>
+<div style="flex:1;background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-variant-numeric:tabular-nums;font-size:24px;font-weight:700;color:#697733">02</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">Get paid</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">A buyer sends euros to your Revolut, Wise or bank</p>
+</div>
+<x-shape kind="arrow-right" style="background:#697733;width:48px;height:24px"></x-shape>
+<div style="flex:1;background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-variant-numeric:tabular-nums;font-size:24px;font-weight:700;color:#697733">03</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#1D3814">Prove</h3>
+<p style="font-size:24px;line-height:1.4;color:#54694D">The buyer proves the payment with a zero-knowledge proof</p>
+</div>
+<x-shape kind="arrow-right" style="background:#697733;width:48px;height:24px"></x-shape>
+<div style="flex:1;background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:32px;display:flex;flex-direction:column;gap:8px">
+<p style="font-variant-numeric:tabular-nums;font-size:24px;font-weight:700;color:#BECD67">04</p>
+<h3 style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF">Release</h3>
+<p style="font-size:24px;line-height:1.4;color:rgba(255,255,255,0.78)">The contract checks the proof and releases the USDC</p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:32px">
+<div style="display:flex;flex-direction:column;gap:8px;border-left:4px solid #697733;padding:0 0 0 32px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#697733">≤ 0.95%</p>
+<p style="font-size:24px;line-height:1.4;color:#54694D">taker fee, paid by the buyer; you set your rate</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;border-left:4px solid #697733;padding:0 0 0 32px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#697733">24 / 31</p>
+<p style="font-size:24px;line-height:1.4;color:#54694D">currencies via Revolut / Wise, plus PayPal, Monzo and more</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;border-left:4px solid #D4534F;padding:0 0 0 32px">
+<p style="font-variant-numeric:tabular-nums;font-size:44px;font-weight:700;letter-spacing:-0.02em;color:#D4534F">Beta</p>
+<p style="font-size:24px;line-height:1.4;color:#54694D">a young protocol: start with $20–50</p>
+</div>
+</div>
+<aside>0:34 – peer.xyz (built on the ZKP2P protocol). The cleanest way I know to turn borrowed USDC into euros on your own bank account without KYC.
+
+As the seller of USDC (that’s you when cashing out):
+1. You deposit USDC into the escrow smart contract, choose which payment apps and currencies you accept, and set your rate.
+2. A buyer picks your offer and pays you euros on Revolut, Wise, a SEPA account and so on.
+3. The buyer generates a cryptographic proof of that payment (zkTLS / TEE). Only amount, recipient and timestamp are revealed.
+4. The contract verifies the proof and releases the USDC to the buyer. You already have the euros.
+
+Why it’s safe-ish: neither side has to trust the other or a company – the USDC sits in a contract until the payment is proven. “Built on proofs, not promises.”
+
+Fees: buyers pay a taker fee of up to 0.95%; bridging to another chain up to 0.5%. Sellers keep their spread.
+
+Caution: it’s still a young (beta) protocol. Start small. And remember your bank still sees incoming payments from strangers – keep amounts reasonable.
+
+Demo if time: open peer.xyz and show the sell flow without confirming.</aside>
+</section>

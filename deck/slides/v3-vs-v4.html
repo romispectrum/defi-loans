@@ -1,0 +1,45 @@
+<section id="v3-vs-v4" style="background:radial-gradient(circle at 88% 0%, rgba(143,193,217,0.26) 0%, rgba(143,193,217,0) 55%), #F8FAF7;color:#1D3814;font-family:'Nunito Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="align-self:start;display:flex;align-items:center;gap:12px;background:rgba(255,255,255,0.7);border:1px solid rgba(190,205,103,0.5);border-radius:26px;padding:8px 24px 8px 20px"><div style="width:12px;height:12px;border-radius:6px;background:#697733"></div><p style="font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">03 · Hands-on</p></div>
+<h2 style="font-size:72px;font-weight:700;line-height:1.08;letter-spacing:-0.02em;color:#1D3814">Aave V3 vs v4: <span style="color:#697733">what changed</span></h2>
+</div>
+<div style="background:rgba(255,255,255,0.8);border:1px solid rgba(190,205,103,0.3);border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.07);padding:12px 24px;display:flex;flex-direction:column">
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:12px 16px;border-bottom:2px solid rgba(190,205,103,0.5)"><p style="width:260px;font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733">&#160;</p><p style="width:640px;font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733"><a href="https://aave.com/docs/aave-v3/overview">Aave V3</a></p><p style="width:636px;font-size:24px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:#697733"><a href="https://aave.com/docs/aave-v4">Aave v4</a></p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Structure</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">One shared pool per chain</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">One hub, many spokes</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Health factor</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">One per chain</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">One per spoke</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Liquidation</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Up to 50% of the debt, fixed bonus</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Back to a target HF, bonus rises</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Stablecoin rates</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">3–5% (Jun 2026)</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">0.5–1.5% (Oct 2026)</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;border-bottom:1px solid rgba(190,205,103,0.3);"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Track record</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Since 2022, deep liquidity</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">2026: Ethereum, Avalanche, Arc</p></div>
+<div style="display:flex;flex-direction:row;gap:24px;align-items:center;padding:10px 16px;background:rgba(190,205,103,0.2);border-radius:14px;"><p style="width:260px;font-size:28px;line-height:1.35;font-weight:700;color:#1D3814">Use it for</p><p style="width:640px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">Big positions, today’s demo</p><p style="width:636px;font-size:28px;line-height:1.35;font-weight:400;color:#54694D">The cheapest loan, smaller size</p></div>
+</div>
+<div style="background:#1D3814;border-radius:28px;box-shadow:0 24px 80px rgba(29,56,20,0.16);padding:28px 40px"><p style="font-size:32px;font-weight:700;letter-spacing:-0.01em;color:#FFFFFF"><span style="color:#BECD67">Rule of thumb:</span> V3 for the big position, v4 for a smaller, cheaper loan.</p></div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F7258">Docs: <a href="https://aave.com/docs/aave-v3/overview">Aave V3</a> · <a href="https://aave.com/docs/aave-v4">Aave v4</a> · <a href="https://aave.com/docs/aave-v4/liquidity/spokes">v4 spokes</a> · <a href="https://aave.com/docs/aave-v4/positions/liquidations">v4 liquidations</a>. Rates: <a href="https://liberation.travel/live-off-crypto-loan-legally-pay-no-tax-2026">Liberation Travel</a>, <a href="https://blog.opportunist.global/ako-%C5%BEi%C5%A5-dlhodobo-z-krypto-p%C3%B4%C5%BEi%C4%8Dky-a-leg%C3%A1lne-neplati%C5%A5-dane-odvody-v-roku-2026-487a49e561ab">Opportunist</a>, 2026 snapshots.</p>
+<aside>0:25 – One slide to answer “so which Aave do I use?”
+
+Structure: V3 is one big pool per chain; everything you supply backs everything you borrow there. v4 splits that into a Liquidity Hub (the money) and spokes (separate borrowing markets with their own rules).
+
+Health factor: on V3 you have one HF per chain. On v4 each spoke has its own, so a safe position on one spoke doesn’t rescue a risky one on another.
+
+Liquidation: V3 liquidators can repay up to 50% of your debt in one go (100% if HF falls under 0.95) and earn a fixed bonus per asset. v4 liquidators repay only enough to lift you back to about HF 1.24, but the bonus grows the deeper you are under water.
+
+Rates: V3 stablecoins cost 3–5% in mid-2026; v4 spokes on Arc and Avalanche 0.5–1.5% in October 2026. Thin v4 markets move fast.
+
+Track record: V3 has run since 2022 across more than ten networks with deep liquidity. v4 is a 2026 product.
+
+My rule: V3 for the big position and for learning (it is what we demo today), v4 for a smaller, cheaper loan once you are comfortable – and keep part of the debt on V3 while v4 is young.
+
+Everything else is identical: same wallet, same WBTC, same health factor math, same “never press Max”.
+
+Sources:
+– Liberation Travel: https://liberation.travel/live-off-crypto-loan-legally-pay-no-tax-2026
+– Opportunist: https://blog.opportunist.global/ako-%C5%BEi%C5%A5-dlhodobo-z-krypto-p%C3%B4%C5%BEi%C4%8Dky-a-leg%C3%A1lne-neplati%C5%A5-dane-odvody-v-roku-2026-487a49e561ab
+– Aave governance, v4 on Avalanche: https://governance.aave.com/t/arfc-deploy-aave-v4-on-avalanche/25165
+
+More on v4 (from the Aave v4 slide that was merged in here):
+– Architecture: a Liquidity Hub holds the money and does the accounting; spokes are separate borrowing markets with their own collateral list, risk settings and health factor. A safe position on one spoke does not rescue a risky one on another.
+– Liquidations are gentler than v3: liquidators repay only enough to bring you back to a target health factor (about 1.24 on the Avalanche Main Spoke proposal), but the bonus rises as your HF falls (up to about 7%). The Aave v4 docs call it a Dutch auction.
+– Rates (Lupták, Oct 2026): EURC about 0.47% on Arc against cirBTC or WETH; USDT about 1.16% and USDC about 1.48% on Avalanche against BTC.b. The USDT rate moved from 0.98% to 1.16% within two days: thin markets move fast.
+– Caveats: v4 is young (Ethereum March 2026, Avalanche July, Arc September). Arc is Circle’s permissioned chain and its gas is paid in USDC (keep about 20 USDC). Borrow power goes all the way to HF 1.0, so the Max button is a trap. The author of that article set his alert at HF 1.4 and keeps a top-up reserve.
+
+Docs: Aave V3 https://aave.com/docs/aave-v3/overview · Aave v4 https://aave.com/docs/aave-v4 · v4 spokes https://aave.com/docs/aave-v4/liquidity/spokes · v4 liquidations https://aave.com/docs/aave-v4/positions/liquidations</aside>
+</section>
